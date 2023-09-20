@@ -17,13 +17,20 @@ pre {
   line-height: 10px;
 }
 
-#result {
+.result, .old_results .result {
   border-radius: 5px;
-  border: 7px solid #D5D5D5;
+  border: 4px solid #D5D5D5;
   padding: 5px;
   overflow: scroll;
   font-size: 1.3em;
   min-height: 200px;
+  margin-bottom: 10px;
+}
+
+.old_results .result {
+  border-radius: 3px;
+  border: 2px solid #5D5D5D;
+  
 }
 
 .container {
@@ -32,6 +39,23 @@ pre {
   padding: 20px;
   background-color: #fff;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.history-container {
+  display: flex;
+  flex-direction: column;
+}
+.history-container .header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.history-container .header div {
+  display: flex;
+  align-items: center;
+  padding-left: 5px;
 }
 
 /* CSS rule for the 'ins' tag */
@@ -88,4 +112,36 @@ del {
      color: #00961c;
      border: solid 2px #0ac281;
 }
+
+.close.icon {
+  color: #000;
+  position: relative;
+  margin-top: 0;
+  margin-left: 0;
+  width: 21px;
+  height: 21px;
+}
+
+.close.icon:before {
+  content: '';
+  position: absolute;
+  top: 10px;
+  width: 21px;
+  height: 1px;
+  background-color: currentColor;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.close.icon:after {
+  content: '';
+  position: absolute;
+  top: 10px;
+  width: 21px;
+  height: 1px;
+  background-color: currentColor;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
 
