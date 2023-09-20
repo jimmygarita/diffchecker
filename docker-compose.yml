@@ -1,0 +1,9 @@
+version: '3'
+services:
+  node-diffchecker:
+    image: node-diffchecker
+    ports:
+      - "4567:4567"
+    volumes:
+      - "./:/app"
+    restart: always
