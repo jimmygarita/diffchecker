@@ -19,6 +19,7 @@ npm start
 
 ### Run the app in docker
 ```bash
+docker build -t node-diffchecker .
 docker-compose up -d
 ```
 Go to http://localhost:4567
