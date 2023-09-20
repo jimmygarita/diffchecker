@@ -1,0 +1,35 @@
+<html>
+   <head>
+      <title>Diff Checker</title>
+      <style type="text/css">
+         @import url('http://fonts.googleapis.com/css2?family=Bebas+Neue&family=Koulen&family=Lato&family=Nunito&family=Playfair+Display:ital@1&family=Prata&family=Raleway:ital,wght@1,100&family=Roboto&family=Roboto+Condensed&family=Teko&display=swap');
+      </style>
+      <link rel="stylesheet" type="text/css" href="/styles.css">
+   </head>
+   <body>
+      <div class="container">
+         <h1>Diff Checker</h1>
+         <form action="/" method="post">
+            <div class="text-container">
+               <div class="textarea-left">
+                  <h3 for="string1">Text 1:</h3>
+                  <br>
+                  <!-- Set the number of rows to 30 -->
+                  <textarea id="string1" name="string1" rows="30" cols="30" required></textarea>
+               </div>
+               <div class="textarea-right">
+                  <h3 for="string2">Text 2:</h3>
+                  <br>
+                  <!-- Set the number of rows to 30 -->
+                  <textarea id="string2" name="string2" rows="30" cols="30" required></textarea>
+               </div>
+            </div>
+            <br>
+            <button type="submit" class="btn" value="Compare">Compare</button>
+         </form>
+         <hr>
+         <h2>Results</h2>
+         <div id="result"></div>
+      </div>
+   </body>
+</html>
